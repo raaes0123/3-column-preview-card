@@ -1,0 +1,114 @@
+:root {
+    --container-width-desktop: 1440px;
+    --container-width-mobile: 375px;
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --font-w-item: 700;
+    --font-w-desc: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+.container {
+    background-color: var(--Transparent-white-paragraphs);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container p {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Transparent-white-paragraphs);
+    font-weight: var(--font-w-desc);
+    line-height: 30px;
+    padding-top: 3%;
+    padding-bottom: 30%;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: var(--font-w-item);
+    color: var(--Very-light-gray);
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+.vehicle {
+    width: 250px;
+    height: 400px;
+    padding: 40px;
+}
+#sedan {
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+#suv {
+    background-color: var(--Dark-cyan);
+}
+
+#luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+.button {
+    background-color: var(--Very-light-gray);
+    border-radius: 2px;
+    width: 12em;
+    height: 3em;
+    border-radius: 25px;
+    font-weight: 700;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#sedan button {
+    color: var(--Bright-orange);
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--Transparent-white-paragraphs) !important;
+    border-color: var(--Transparent-white-paragraphs);
+    cursor: pointer;
+}
+
+#suv button {
+    color: var(--Dark-cyan);
+}
+
+#luxury button {
+    color: var(--Very-dark-cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: 120vw;
+        height: 240vh;
+    }
+    #sedan {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #luxury {
+        border-radius: 0 0 10px 10px;
+    }
+    
+}
