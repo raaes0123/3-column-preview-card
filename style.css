@@ -10,8 +10,6 @@
     --font-w-desc: 400;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 .container {
     background-color: var(--Transparent-white-paragraphs);
@@ -36,13 +34,11 @@ h1 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: var(--font-w-item);
     color: var(--Very-light-gray);
-    font-size: 24px;
-    letter-spacing: -1px;
 }
 
 .vehicle {
-    width: 250px;
-    height: 400px;
+    max-width: 200px;
+    min-height: 400px;
     padding: 40px;
 }
 #sedan {
@@ -97,11 +93,11 @@ h1 {
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 700px) {
     .container {
         flex-direction: column;
-        width: 120vw;
-        height: 240vh;
+        max-width: 120vw;
+        min-height: 240vh;
     }
     #sedan {
         border-radius: 10px 10px 0 0;
